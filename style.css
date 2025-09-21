@@ -1,0 +1,56 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #eef3f9;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+}
+h2 { margin-bottom: 10px; }
+.calendar { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; margin-top: 10px; }
+.day-name { font-weight: 600; background: #d9e6f7; padding: 8px; border-radius: 6px; color: #1a4d80; }
+.day {
+    background: #fff;
+    padding: 8px 5px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transition: transform 0.2s;
+    font-size: 14px;
+    position: relative;
+}
+.day:hover { transform: scale(1.03); }
+.day.disabled { box-shadow: none; }
+.day.prev-month { color: #aaa; background: #f0f0f0; }
+.day.next-month { color: #888; background: #f8f8f8; }
+.today { border: 2px solid #2196F3; background: #e3f2fd; }
+.sunday { color: red; box-shadow: 0 2px 6px rgba(255,0,0,0.3); }
+.controls { display: flex; justify-content: center; align-items: center; gap: 8px; margin-bottom: 15px; flex-wrap: wrap; }
+button { padding: 6px 14px; border: none; border-radius: 6px; background: #2196F3; color: white; font-size: 14px; cursor: pointer; font-weight: 600; }
+button:hover { background: #1976D2; }
+input[type="checkbox"] { width: 20px; height: 20px; accent-color: #2196F3; cursor: pointer; }
+.date-number { font-weight: 600; margin-bottom: 4px; }
+.note {
+    width: 90%;
+    font-size: 12px;
+    margin-top: 4px;
+    padding: 2px 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    font-family: 'Poppins', sans-serif;
+}
+.note-indicator {
+    width: 8px;
+    height: 8px;
+    background: #f39c12;
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+}
+#monthYear { font-weight:600; font-size:16px; }

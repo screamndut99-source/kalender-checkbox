@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kalender Checklist & Catatan</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h2>📅 Kalender CheckBox</h2>
+<div class="controls">
+  <button onclick="prevMonth()">⬅️ Sebelumnya</button>
+  <span id="monthYear"></span>
+  <button onclick="nextMonth()">Berikutnya ➡️</button>
+  <button onclick="goToToday()">📌 Hari Ini</button>
+  <button onclick="resetMonth()">♻️ Reset Bulan</button>
+</div>
+
+<div class="calendar" id="calendar"></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
